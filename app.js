@@ -9,7 +9,7 @@ var app = express();
 
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://localhost/machineDetails', { useMongoClient: true, promiseLibrary: require('bluebird') })
+mongoose.connect('mongodb://heroku_zfvf7jcg:vprj72mgg2qrpbd7b657c69l4e@ds239137.mlab.com:39137/heroku_zfvf7jcg', { useMongoClient: true, promiseLibrary: require('bluebird') })
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
