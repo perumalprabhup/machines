@@ -5,7 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng build && node ./bin/www",
-    "build": "ng build",
+    "build": "webpack",
+    "heroku-postbuild": "echo Skip builds on Heroku"
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
